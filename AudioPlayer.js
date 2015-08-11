@@ -1,6 +1,6 @@
 'use strict';
 
-var RNAudioPlayer = require('NativeModules').RNAudioPlayer;
+var RNAudioPlayer = require('react-native').NativeModules.RNAudioPlayer;
 
 var AudioPlayer = {
   play(fileName: string) {
