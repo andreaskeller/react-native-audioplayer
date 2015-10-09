@@ -39,7 +39,7 @@ dependencies {
 * Register the module (in MainActivity.java)
 
 ```java
-import com.sh3rawi.RNAudioPlayer.* // <--- import
+import com.sh3rawi.RNAudioPlayer.*; // <--- import
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
   ...
@@ -51,7 +51,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
       .setApplication(getApplicatio)
       ...
       .addPackage(new MainReactPackage())
-      .addPackage(new RNAudioPlayer()) <--- add here
+      .addPackage(new RNAudioPlayer())   //  <--- add here
       ...
   }
 }
