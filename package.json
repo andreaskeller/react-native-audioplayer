@@ -1,6 +1,6 @@
 {
   "name": "react-native-audioplayer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Small audio player library for react native",
   "main": "AudioPlayer.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "react-component",
     "react-native",
     "ios",
+    "android"
     "audioplayer"
   ],
   "author": "Andreas Keller <andreas.keller@gmx.ch> (https://github.com/andreaskeller)",
