@@ -14,7 +14,7 @@
     "react-component",
     "react-native",
     "ios",
-    "android"
+    "android",
     "audioplayer"
   ],
   "author": "Andreas Keller <andreas.keller@gmx.ch> (https://github.com/andreaskeller)",
