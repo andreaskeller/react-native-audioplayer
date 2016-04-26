@@ -38,6 +38,25 @@ dependencies {
 
 * Register the module (in MainActivity.java)
 
+ReactNative version >= 0.18
+```java
+import com.sh3rawi.RNAudioPlayer.*; // <--- import
+
+public class MainActivity extends ReactActivity {
+  ...
+
+   @Override
+    protected List<ReactPackage> getPackages() {
+        return Arrays.<ReactPackage>asList(
+            new MainReactPackage(),
+            ...
+            new RNAudioPlayer() // <--- add here
+        );
+    }
+}
+```
+
+ReactNative version <= 0.17
 ```java
 import com.sh3rawi.RNAudioPlayer.*; // <--- import
 
@@ -56,6 +75,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
   }
 }
 ```
+
 
 ## Usage
 
