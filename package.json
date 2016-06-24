@@ -2,6 +2,7 @@
   "name": "react-native-audioplayer",
   "version": "0.2.0",
   "description": "Small audio player library for react native",
+  "homepage": "https://github.com/andreaskeller/react-native-audioplayer",
   "main": "AudioPlayer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
