@@ -18,4 +18,13 @@ RCT_EXPORT_METHOD(play:(NSString *)fileName)
     [self.audioPlayer play];
 }
 
+RCT_EXPORT_METHOD(playFromURL:(NSString *)url)
+{
+    NSURL *soundURL=[NSURL URLWithString:url];
+	AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL: soundURL];
+	self.audioPlayerURL = [AVPlayer playerWithPlayerItem:playerItem];
+	[self.audioPlayerURL play];
+	self.audioPlayerURL.actionAtItemEnd = AVPlayerActionAtItemEndNone;
+}
+
 @end

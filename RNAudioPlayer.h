@@ -4,5 +4,6 @@
 @interface RNAudioPlayer : NSObject <RCTBridgeModule>
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
+@property (strong, nonatomic) AVPlayer *audioPlayerURL;
 
 @end
