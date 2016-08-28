@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:andreaskeller/react-native-audioplayer.git"
+    "url": "https://github.com/tbinetruy/react-native-audioplayer"
   },
   "keywords": [
     "react-component",
@@ -17,6 +17,6 @@
     "android",
     "audioplayer"
   ],
-  "author": "Andreas Keller <andreas.keller@gmx.ch> (https://github.com/andreaskeller)",
+  "author": "Thomas Binetruy and Andreas Keller (forked from https://github.com/andreaskeller/react-native-audioplayer)",
   "license": "MIT"
 }
