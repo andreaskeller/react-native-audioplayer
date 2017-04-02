@@ -7,7 +7,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(play:(NSString *)fileName)
 {
     AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setCategory: AVAudioSessionCategoryPlayback error: nil];
+    [session setCategory: AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionDuckOthers error: nil];
     [session setActive: YES error: nil];
     
     NSURL *soundURL = [[NSBundle mainBundle] URLForResource:[[fileName lastPathComponent] stringByDeletingPathExtension]
