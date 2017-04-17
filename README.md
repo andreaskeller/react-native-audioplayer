@@ -2,7 +2,7 @@
 
 Small audio player library for react native
 
-##Installation
+## Installation
 
 First you need to install react-native-audioplayer:
 
