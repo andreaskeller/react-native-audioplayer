@@ -28,15 +28,20 @@ public class RNAudioPlayerModule extends ReactContextBaseJavaModule {
   public void play(String audio) {
     String fname = audio.toLowerCase();
     int resID = this.reactContext.getResources().getIdentifier(fname, "raw", this.reactContext.getPackageName());
-    mp = MediaPlayer.create(this.reactContext, resID);
-    mp.start();
-    mp.setOnCompletionListener(new OnCompletionListener() {
-      @Override
-      public void onCompletion(MediaPlayer mp) {
-        mp.reset();
-        mp.release();
-        mp = null;
-      }
-    });
+    try {
+      mp = MediaPlayer.create(this.reactContext, resID);
+      mp.start();
+      mp.setOnCompletionListener(new OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+          mp.reset();
+          mp.release();
+          mp = null;
+        }
+      });
+    }catch (Exception e) {
+//      Toast.makeText(this.reactContext, "无法播放音频", Toast.LENGTH_SHORT).show();
+      e.printStackTrace();
+    }
   }
 }
